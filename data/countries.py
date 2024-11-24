@@ -193,3 +193,8 @@ countries = [
   'Zambia',
   'Zimbabwe',
 ];
+
+for key in countries:
+    if 'land' in key:
+        print(key)
+

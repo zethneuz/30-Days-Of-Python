@@ -1,4 +1,4 @@
-[
+countries = [
     {
         "name": "Afghanistan",
         "capital": "Kabul",
@@ -2618,3 +2618,13 @@
         "currency": "Botswana pula"
     }
 ]
+
+print(type(countries))
+#print(countries)
+
+languages = set()
+
+for country in countries:
+    languages.update(country['languages'])
+
+print("Total number of languages: ", len(languages))
